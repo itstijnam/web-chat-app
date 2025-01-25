@@ -1,0 +1,96 @@
+    .EmptyChatContainer{
+        display: flex;
+        // border: 2px solid red;
+        background-color: #1c1d25;
+        width: 100%;
+
+        .ECC1{
+            border-bottom: 2px solid gray;
+            width: 100%;
+            height: 15rem;
+            margin-top: 2rem;
+            box-shadow: 0px 2px 10px white;
+
+            overflow-y: scroll;
+            ::-webkit-scrollbar {
+                display: none;
+            }
+    
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+
+            .Users{
+                color: goldenrod;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 10rem;
+                font-size: 2rem;
+                font-weight: 800;
+                color: white;
+                text-shadow: 2px 2px 8px red;
+            }
+        }
+    }
+
+.onlineDiv{
+    border-left: 1px solid rgba(96, 36, 96, 0.447);
+    border-bottom: 1px solid rgba(96, 36, 96, 0.447);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0rem 2rem;
+    justify-content: space-between;
+
+    .userOnlineImage{
+        border: 2px solid rgba(213, 213, 213, 0.318);
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .imageNotAvailable{
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+    }
+}
+
+.userOnlineDetail{
+    display: flex;
+    align-items: center;
+
+}
+.statusCheck{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40rem;
+
+    .profileSetupCheck{
+        color: white;
+    }
+
+    .onlineCheck{
+        color: orangered;
+
+        .onlineGreenColor{
+            color: yellowgreen;
+        }
+    }
+}

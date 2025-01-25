@@ -1,0 +1,62 @@
+.profile{
+    background-color: #1b1c24;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .p1{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 80vw;
+
+        .artopDiv{
+            .Arrowback{
+                font-size: 2rem;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        .MHT{
+            .mouseHoveredC{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                .Image{
+                    border: 2px solid white;
+                    height: 6rem;
+                    width: 6rem;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.forHoveredImage{
+    position: absolute;
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: red;
+    font-size: 1.4rem;
+    // border: 2px solid red;
+    .faTrash .faTrash{
+        cursor: pointer;
+        color: white !important;
+        font-size: 4rem;
+    }
+}

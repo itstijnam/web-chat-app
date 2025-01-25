@@ -1,0 +1,51 @@
+.ChatHeader{
+    border-bottom: 1px solid gray;
+    height: 10vh;
+    // border: 2px solid magenta;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    .CH1{
+        // border: 2px solid white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0rem 4rem;
+
+        .CH11{
+            display: flex;
+            color: white;
+            gap: 1rem;
+            .Image{
+                height: 3rem;
+                width: 3rem;
+                overflow: hidden;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid rgba(255, 255, 255, 0.151);
+                .insideImage{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            }
+        }
+    }
+}
+
+.userName{
+    display: flex;
+    gap: 1rem;
+    color: gray;
+    flex-wrap: wrap;
+    .firstName{
+        color: white;
+    }
+}

@@ -1,0 +1,70 @@
+.ContactList{
+    /* border: 2px solid green; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+
+}
+
+.CL1, .unselectedChatContainer{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    height: 3.5rem;
+    border-bottom: 1px solid rgba(109, 73, 115, 0.514);;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.CL1:hover{
+    background-color: rgba(109, 73, 115, 0.514);
+    color: white;
+}
+
+.selectedChatContainer{
+    background-color: rgba(109, 73, 115, 0.514);
+    color: white;
+}
+.CL1-1{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.CL1-1-Image{
+
+    border: 2px solid rgba(142, 144, 142, 0.263);
+    background-color: rgba(225, 191, 197, 0.163);
+    position: absolute;
+    height: 2.8rem;
+    width: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0rem 0rem 1rem 0.2rem;
+}
+.Image img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CL1-1-firstName{
+    position: absolute;
+    display: flex;
+    top: 1rem;
+    left: 3.5rem;
+}

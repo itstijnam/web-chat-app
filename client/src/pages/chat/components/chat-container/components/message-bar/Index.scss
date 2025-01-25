@@ -1,0 +1,54 @@
+.MessageBar{
+    border-top: 1px solid red;
+    height: 10vh;
+    // background-color: #2a2b33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .MB1{
+        background-color: #2a2b33;
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
+        
+        input{
+            background: transparent;
+            border: none;
+            line-height: 2.5rem;
+            width: 70vw;
+            padding: 0rem 2rem;
+        }
+        .attachment{
+            display: flex;
+            gap: 0.4rem;
+            margin-right: 0.9rem;
+            position: relative;
+
+            .emojiPicker{
+                position: absolute;
+                bottom: 3rem;
+                right: 0;
+            }
+        }
+    }
+
+    .msgSend{
+        button{
+            background-color: #8417ff;
+            height: 2.5rem;
+            width: 3.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.2rem;
+            font-size: 1.5rem;
+            
+        }
+        button:hover{
+            background-color: #5a00c1;
+            
+        }
+    }
+}
