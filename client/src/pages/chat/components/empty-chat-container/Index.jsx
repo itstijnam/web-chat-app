@@ -13,7 +13,7 @@ function EmptyChatContainer() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get(`${HOST}/api/auth/all-users`, {
+        const res = await axios.get(`${import.meta.env.VITE_SERVER_URL}/api/auth/all-users`, {
           withCredentials: true,
         });
         if (res.data.success) {
