@@ -6,7 +6,7 @@ import Logo from '/vite.svg'
 import { apiClient } from '../../../../lib/api-client'
 import { GET_DM_CONTACTS_ROUTES, GET_USER_CHANNELS_ROUTE } from '../../../../utils/constants'
 import { useAppStore } from '../../../../store/Index'
-import ContactList from '../../../../components/Contact-List'
+import ContactList from '../../../../components/ContactList'
 import CreateChannel from './components/create-channel/CreateChannel'
 
 function ContactsContainer() { 

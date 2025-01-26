@@ -23,6 +23,7 @@ function ProfileInfo() {
     <div className='ProfileInfo'>
         <div className='PB1' onClick={()=>navigate('/profile')} >
             <div className="Image">
+                {console.log('profileInfo: ', userInfo)}
                 <img src={`${HOST}/${userInfo.image}`} alt="" />
             </div>
             <span>{userInfo?.firstName} {userInfo?.lastName}</span>

@@ -91,11 +91,11 @@ const setupSocket = (server) => {
         socket.on("sendMessage", sendMessage)
         socket.on("send-channel-message", sendChannelMessage);
         socket.on("disconnect", () => { 
-            disconnect(socket)
             if(userId){
                 delete userSocketMap[userId]
                 // console.log(`user disconnected: userId = ${userId}, socketId = ${socket.id}`);
             }
+            disconnect(socket)
             io.emit('getOnlineUsers', Object.keys(userSocketMap));
         })
     })

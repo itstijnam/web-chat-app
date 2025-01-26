@@ -42,7 +42,7 @@ app.get("*", (req, res)=>{
 })
 
 const server = app.listen(PORT, ()=>{
-    console.log(`http://locahost:${PORT}`)
+    console.log(`http://localhost:${PORT}`)
 })
 
 setupSocket(server);
